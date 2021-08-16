@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="javaCloud" target="11" />
+      <module name="javaCloud.main" target="11" />
+      <module name="javaCloud.test" target="11" />
+      <module name="Shopping" target="11" />
+      <module name="Shopping.main" target="11" />
+      <module name="Shopping.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
