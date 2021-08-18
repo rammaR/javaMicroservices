@@ -12,6 +12,6 @@ import org.springframework.data.elasticsearch.annotations.Document;
 @NoArgsConstructor
 @Builder
 public class Item {
-    private Integer productID;
+    private String productID;
     private Integer quantity;
 }

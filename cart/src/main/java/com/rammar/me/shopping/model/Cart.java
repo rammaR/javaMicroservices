@@ -7,16 +7,19 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Document(indexName = "cart")
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class Cart {
-
     @Id
-    private Long id;
+    private String id;
     private List<Item> items;
+
+    public Cart() {
+        this.items = new ArrayList<>();
+    }
 }

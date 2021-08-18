@@ -15,15 +15,15 @@ public class CartService {
         this.repository = repository;
     }
 
-    public Cart findById(Long id) throws CartNotFoundException {
-        return repository.findById(id).orElse(new Cart());
+    public Cart findById(String id) throws CartNotFoundException {
+        return repository.findById(id).orElse(save(new Cart()));
     }
 
     public Cart save(Cart cart) {
         return repository.save(cart);
     }
 
-    public void clear(Long id) throws CartNotFoundException {
+    public void clear(String id) throws CartNotFoundException {
         Cart cart = findById(id);
         cart.getItems().clear();
     }
